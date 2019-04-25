@@ -1,6 +1,4 @@
 # php
-PHP repository with handy methods and classes
-
 
 **What does this class do?**  
 
