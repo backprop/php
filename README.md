@@ -22,11 +22,11 @@ Let's say you have a query that has:
 
 You might want to use this query to output a header for each department, then list the users in each department in a bulleted list.  Absent some other framework that "does it for you," this isn't completely trivial to do in plain PHP code.  While you could write code to keep track of when each column changes value, and then remember to close previous markup/start new markup as it does, it becomes tedious to manage as the number of columns grows.
 
-This method will convert your two-dimenstional array into a nested array to make it easier to traverse by columns. This is similar to how the CFML &lt;cfoutput&gt; "group" option works.
+This method will convert your two-dimensional array into a nested array to make it easier to traverse by columns. This is similar to how the CFML &lt;cfoutput&gt; "group" option works.
 
 **How do I run it?**  
 
-We assume that you're using PDO to run your query, and the fetchAll() method to put the query results in a two-dimensional array. Let's call that array **$myQuery**.
+We assume that you're using PDO to run your query (properly sorted), and the fetchAll() method to put the query results in a two-dimensional array. Let's call that array **$myQuery**.
 
 From there, you can convert your array to a grouped array:
 
