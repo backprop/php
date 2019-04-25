@@ -20,7 +20,7 @@ Let's say you have a query that has:
 | HR          | Frank   |
 | HR          | Heather |
 
-You might want to use this query to output a header for each department, then list the users in each department in a bulleted list.  Absent some other framework that "does it for you," this isn't completely trivial to do in plain PHP code.  While you could write code to keep track of when each column changes value, and then remembering to close previous markup/start new markup as it does, it becomes tedious to manage as the number of columns grows.
+You might want to use this query to output a header for each department, then list the users in each department in a bulleted list.  Absent some other framework that "does it for you," this isn't completely trivial to do in plain PHP code.  While you could write code to keep track of when each column changes value, and then remember to close previous markup/start new markup as it does, it becomes tedious to manage as the number of columns grows.
 
 This method will convert your two-dimenstional array into a nested array to make it easier to traverse by columns. This is similar to how the CFML &lt;cfoutput&gt; "group" option works.
 
