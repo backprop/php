@@ -46,5 +46,5 @@ Now, you simply loop through the outer array which represents your first groupin
         foreach($record["group"] as $record){    
           echo "<li>" . $record["User"] . "</li>";  
         }  
-     echo "</ul>"; 
-}  
+        echo "</ul>"; 
+     }  
