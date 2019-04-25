@@ -28,7 +28,7 @@ This method will convert your two-dimenstional array into a nested array to make
 
 **How do I run it?**  
 
-We assume that you're using PDO to run your query, and the fetchAll() method to put the query results in a two-dimensional array. Let's call that array** $myQuery**.
+We assume that you're using PDO to run your query, and the fetchAll() method to put the query results in a two-dimensional array. Let's call that array **$myQuery**.
 
 From there, you can convert your array to a grouped array:
 
@@ -36,9 +36,10 @@ From there, you can convert your array to a grouped array:
 
 where the first argument is your query (2D array), and the second argument is an array with the column names you need to group on.
 
+
 **How do I process the returned array?**
 
-Now, you simply loop through the outer array which represents your first grouping level.  When you need to hop to a lower grouping level, access the **group **element of the array, which represents the next level:
+Now, you simply loop through the outer array which represents your first grouping level.  When you need to hop to a lower grouping level, access the **group** element of the array, which represents the next level:
 
     foreach($myQuery as $record){  
         echo "<h1>" .$record["Department]" . "</h1>";  
