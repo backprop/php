@@ -40,9 +40,11 @@ where the first argument is your query (2D array), and the second argument is an
 Now, you simply loop through the outer array which represents your first grouping level.  When you need to hop to a lower grouping level, access the **group** element of the array, which represents the next level:
 
     foreach($myQuery as $record){  
+        // Department level
         echo "<h1>" .$record["Department]" . "</h1>";  
         echo "<ul>";  
-        foreach($record["group"] as $record){    
+        foreach($record["group"] as $record){  
+          // User level
           echo "<li>" . $record["User"] . "</li>";  
         }  
         echo "</ul>"; 
