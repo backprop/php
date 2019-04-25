@@ -32,7 +32,7 @@ From there, you can convert your array to a grouped array:
 
 `$myQuery=PHPGroupQuery::groupQuery($myQuery,["Department","User"]);`
 
-where the first argument is your query (2D array), and the second argument is an array with the column names you need to group on.
+where the first argument is your query (2D array), and the second argument is an array with the column names you need to group on. You can group to as many levels as you wish.  The query must have at least one record, so test it before you send it for grouping.
 
 
 **How do I process the returned array?**
